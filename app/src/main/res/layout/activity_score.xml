@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtScore"
+        android:text=""
+        android:gravity="center"
+        android:textSize="40dp"></TextView>
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:donut_gapWidth="40"
+        app:donut_gapAngle="270"
+        app:donut_strokeWidth="16dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDesc"
+        android:text=""
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"></TextView>
+
+    <Button
+        android:id="@+id/btnMapP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show current players"
+        app:backgroundTint="#F44336"
+        app:cornerRadius="40dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

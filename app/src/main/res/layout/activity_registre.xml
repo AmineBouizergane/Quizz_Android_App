@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registre"
+    android:orientation="vertical"
+    android:layout_margin="35dp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="130dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/formula_1_logo_7"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:id="@+id/etName"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:textCursorDrawable="@null"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email*"
+        android:inputType="textEmailAddress"
+        android:id="@+id/etEmail"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:textCursorDrawable="@null"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password*"
+        android:id="@+id/etPsw"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:textCursorDrawable="@null"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password Confirmation*"
+        android:id="@+id/etConfPsw"
+        android:layout_marginBottom="50dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:textCursorDrawable="@null"
+        />
+
+    <Button
+        android:id="@+id/btnRegistre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:backgroundTint="#F44336"
+        app:cornerRadius="40dp" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbLoad"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
